@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arun-Developer-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        * {
+          padding: 0px;
+          margin: 0px;
+        }
+        background-color: rgb(6, 68, 68);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(42, 94, 94);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(130, 165, 165);
+        font-size: 1.08rem;
+      }
+      main hr {
+        border: 0px;
+        background-color: rgb(55, 139, 139);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+
+        margin: 130px 0;
+      }
+      .firstsection > div {
+        width: 33%;
+
+        align-items: center;
+      }
+      .leftsection {
+        font-size: 3rem;
+        margin: 70px 0;
+      }
+      .leftsection .btn {
+        background-color: rgb(67, 150, 161);
+        color:rgb(71, 64, 64);
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        height: 40px;
+      padding: 7px;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(96, 240, 168);
+      }
+      .textgray {
+        color: gray;
+      }
+      #element {
+        color: rgb(96, 240, 168);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .secondsection .box {
+        background-color: rgb(255, 255, 255);
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+      }
+      .footer {
+        background-color: rgb(79, 114, 99);
+        display: flex;
+        height: 200px;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer div {
+        width: 223px;
+      }
+      .textcenter {
+        background-color: gray;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Arun's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Arun</span>
+          <div>
+            and I am a
+            <div>passinate</div>
+            
+            <span id="element"></span>
+           <div>
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+           </div>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="./bg.png.png" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="textgray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="first">
+          <h3>Arun Developer Portfolio</h3>
+        </div>
+        <div class="second">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="fourth">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="textcenter">
+        Copyright &#169; www.arunportfolio.com | All right reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["web developer", "content creater", "bussines consultant."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
